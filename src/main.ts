@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { HeaderComponent } from './app/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
+  imports: [HeaderComponent],
   template: `
-    <h1>Hello from {{ name }}!</h1>
-    <a target="_blank" href="https://angular.dev/overview">
-      Learn more about Angular
-    </a>
+    <app-header></app-header>
   `,
 })
 export class App {
